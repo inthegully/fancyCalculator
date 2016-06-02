@@ -1,0 +1,39 @@
+$font-stack: Helvetica, sans-serif;
+$background-color: #90EA90;
+body {
+    display: flex;
+    justify-content: center;
+
+    .flexform {
+        height: 300px;
+        width: 200px;
+        margin: 5%;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: $background-color;
+
+        .output {
+            height: 38px;
+            width: 128px;
+            border: 1px solid green;
+            overflow: hidden;
+            padding: 10px;
+            color: grey;
+            font-size: 20px;
+        }
+
+        button {
+            height: 60px;
+            width: 50px;
+            margin: 0;
+            background-color: $background-color;
+            color: grey;
+            border: 1px solid green;
+
+            &:hover {
+                color: yellow;
+                background-color: darken($background-color, 20%);
+            }
+        }
+    }
+}
